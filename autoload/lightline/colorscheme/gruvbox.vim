@@ -31,9 +31,9 @@ if exists('g:lightline')
   let s:p.normal.left = [ [ s:bg0, s:fg4, 'bold' ], [ s:fg4, s:bg2 ] ]
   let s:p.normal.right = [ [ s:bg0, s:fg4 ], [ s:fg4, s:bg2 ] ]
   let s:p.normal.middle = [ [ s:fg4, s:bg1 ] ]
-  let s:p.inactive.right = [ [ s:bg4, s:bg1 ], [ s:bg4, s:bg1 ] ]
-  let s:p.inactive.left =  [ [ s:bg4, s:bg1 ], [ s:bg4, s:bg1 ] ]
-  let s:p.inactive.middle = [ [ s:bg4, s:bg1 ] ]
+  let s:p.inactive.right = [ [ s:bg4, s:bg0 ], [ s:bg4, s:bg0 ] ]
+  let s:p.inactive.left =  [ [ s:bg4, s:bg0 ], [ s:bg4, s:bg0 ] ]
+  let s:p.inactive.middle = [ [ s:bg4, s:bg0 ] ]
   let s:p.insert.left = [ [ s:bg0, s:blue, 'bold' ], [ s:fg1, s:bg2 ] ]
   let s:p.insert.right = [ [ s:bg0, s:blue ], [ s:fg1, s:bg2 ] ]
   let s:p.insert.middle = [ [ s:fg4, s:bg1 ] ]
@@ -48,10 +48,13 @@ if exists('g:lightline')
   let s:p.visual.middle = [ [ s:fg4, s:bg1 ] ]
   let s:p.tabline.left = [ [ s:fg4, s:bg2 ] ]
   let s:p.tabline.tabsel = [ [ s:bg0, s:fg4 ] ]
-  let s:p.tabline.middle = [ [ s:bg0, s:bg4 ] ]
+  let s:p.tabline.middle = [ [ s:bg0, s:bg0 ] ]
   let s:p.tabline.right = [ [ s:bg0, s:orange ] ]
   let s:p.normal.error = [ [ s:bg0, s:red ] ]
   let s:p.normal.warning = [ [ s:bg0, s:yellow ] ]
+  let s:p.normal.informational = [ [ s:bg0, s:blue ] ]
+  let s:p.normal.hint = [ [ s:bg0, s:green ] ]
+  let s:p.normal.git = [ [ s:aqua,  s:bg1 ] ]
 
   let g:lightline#colorscheme#gruvbox#palette = lightline#colorscheme#flatten(s:p)
 endif
