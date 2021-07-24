@@ -19,7 +19,7 @@ endif
 
 let g:colors_name='gruvbox'
 
-if !(has('termguicolors') && &termguicolors) && !has('gui_running') && &t_Co != 256
+if !(has('termguicolors') && &termguicolors) && !has('gui_running') && &t_Co != 256 && &t_Co != 16
   finish
 endif
 
