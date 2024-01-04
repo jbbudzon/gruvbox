@@ -874,9 +874,9 @@ if has('nvim')
   hi! link LspDiagnosticsSignInformation GruvboxBlueSign
   hi! link LspDiagnosticsUnderlineInformation GruvboxBlueUnderline
 
-  hi! link LspDiagnosticsDefaultHint GruvboxAqua
-  hi! link LspDiagnosticsSignHint GruvboxAquaSign
-  hi! link LspDiagnosticsUnderlineHint GruvboxAquaUnderline
+  hi! link LspDiagnosticsDefaultHint GruvboxGreen
+  hi! link LspDiagnosticsSignHint GruvboxGreenSign
+  hi! link LspDiagnosticsUnderlineHint GruvboxGreenUnderline
 endif
 
 " LSP highlighting
@@ -1274,26 +1274,26 @@ call s:HL('multiple_cursors_visual', s:none, s:gb.bg2)
 " coc.nvim: {{{
 
 hi! link CocErrorSign GruvboxRedSign
-hi! link CocWarningSign GruvboxOrangeSign
+hi! link CocWarningSign GruvboxYellowSign
 hi! link CocInfoSign GruvboxBlueSign
-hi! link CocHintSign GruvboxAquaSign
+hi! link CocHintSign GruvboxGreenSign
 hi! link CocErrorFloat GruvboxRed
-hi! link CocWarningFloat GruvboxOrange
+hi! link CocWarningFloat GruvboxYellow
 hi! link CocInfoFloat GruvboxBlue
-hi! link CocHintFloat GruvboxAqua
+hi! link CocHintFloat GruvboxGreen
 hi! link CocDiagnosticsError GruvboxRed
-hi! link CocDiagnosticsWarning GruvboxOrange
+hi! link CocDiagnosticsWarning GruvboxYellow
 hi! link CocDiagnosticsInfo GruvboxBlue
-hi! link CocDiagnosticsHint GruvboxAqua
+hi! link CocDiagnosticsHint GruvboxGreen
 
 hi! link CocSelectedText GruvboxRed
 hi! link CocCodeLens GruvboxGray
 hi! link CocSearch GruvboxAqua
 
 hi! link CocErrorHighlight GruvboxRedUnderline
-hi! link CocWarningHighlight GruvboxOrangeUnderline
+hi! link CocWarningHighlight GruvboxYellowUnderline
 hi! link CocInfoHighlight GruvboxBlueUnderline
-hi! link CocHintHighlight GruvboxAquaUnderline
+hi! link CocHintHighlight GruvboxGreenUnderline
 
 " }}}
 " Telescope.nvim: {{{
